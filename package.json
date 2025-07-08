@@ -1,7 +1,6 @@
 {
   "name": "chrome-extension-for-linkedin",
   "description": "A Chrome extension for enhancing the LinkedIn experience. Leads tracker.",
-  "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",
