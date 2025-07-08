@@ -1,0 +1,165 @@
+body {
+    background-color: #FEFAE0;
+}
+
+input, #note-el {
+    border: 0 px solid #5F6F52;
+}
+
+button {
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, border 0.2s;
+}
+
+.btn-success {
+    background: #5F6F52;
+    color: #FEFAE0;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(95,111,82,0.08);
+}
+.btn-success:hover {
+    background: #A9B388;
+    color: #5F6F52;
+    box-shadow: 0 4px 16px rgba(95,111,82,0.15);
+}
+.btn-success:active {
+    background: #A9B388;
+    color: #5F6F52;
+    box-shadow: 0 2px 4px rgba(95,111,82,0.12);
+}
+
+.btn-primary {
+    background: #A9B388;
+    color: #5F6F52;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(169,179,136,0.08);
+}
+.btn-primary:hover {
+    background: #5F6F52;
+    color: #FEFAE0;
+    box-shadow: 0 4px 16px rgba(95,111,82,0.15);
+}
+.btn-primary:active {
+    background: #5F6F52;
+    color: #FEFAE0;
+    box-shadow: 0 2px 4px rgba(95,111,82,0.12);
+}
+
+.btn-secondary {
+    background: #B99470;
+    color: #FEFAE0;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(185,148,112,0.08);
+}
+.btn-secondary:hover {
+    background: #A9B388;
+    color: #5F6F52;
+    box-shadow: 0 4px 16px rgba(169,179,136,0.15);
+}
+.btn-secondary:active {
+    background: #5F6F52;
+    color: #FEFAE0;
+    box-shadow: 0 2px 4px rgba(95,111,82,0.12);
+}
+
+.btn-outline-success {
+    color: #5F6F52;
+    border: 1.5px solid #5F6F52;
+    background: #FEFAE0;
+    border-radius: 20px;
+}
+.btn-outline-success:hover {
+    background: #5F6F52;
+    color: #FEFAE0;
+    border: 1.5px solid #A9B388;
+}
+.btn-outline-success:active {
+    background: #A9B388;
+    color: #5F6F52;
+    border: 1.5px solid #5F6F52;
+}
+
+ul {
+    /* Bootstrap's list-group handles styling */
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+li.list-group-item {
+    margin-top: 5px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 1px 4px rgba(95,111,82,0.07);
+    transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+    /* Use Bootstrap's list-group-item for styling */
+}
+
+li.list-group-item:hover {
+    box-shadow: 0 4px 16px rgba(95,111,82,0.15);
+    background: #A9B38833;
+    transform: translateY(-2px) scale(1.01);
+}
+li.list-group-item:active {
+    background: #B99470;
+    color: #FEFAE0;
+    box-shadow: 0 1px 2px rgba(185,148,112,0.15);
+}
+
+.fade-in {
+    animation: fadeIn 0.5s, bounceIn 0.5s;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.95); }
+    60% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.list-group-item a {
+    color: #5F6F52;
+    text-decoration: none;
+    word-break: break-all;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+    color: #B99470;
+}
+.list-group-item a:active {
+    color: #A9B388;
+}
+
+.list-group-item .text-muted {
+    color: #B99470 !important;
+}
+
+.invalid-feedback {
+    color: #B99470;
+}
+
+button:active, .btn:active, .btn-success:active, .btn-primary:active, .btn-secondary:active, .btn-outline-success:active {
+    filter: none !important;
+    outline: none !important;
+    box-shadow: 0 1px 2px rgba(95,111,82,0.18) !important;
+    opacity: 0.92;
+}
+
+

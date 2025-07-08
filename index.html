@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body class="bg-light">
+        <div class="container py-4">
+            <h1 class="fw-bold text-center mb-4" style="font-size:1.25rem; letter-spacing:1px; color:#5F6F52;">Leads tracker</h1>
+            <div class="mb-3">
+                <input type="text" id="input-el" class="form-control mb-2" placeholder="Enter URL">
+                <input type="text" id="note-el" class="form-control mb-2" placeholder="Add a note or tag (optional)">
+                <div id="note-feedback" class="invalid-feedback mb-2" style="display:none"></div>
+                <div class="d-flex gap-2 mb-2">
+                    <button id="input-btn" class="btn btn-success flex-fill">SAVE INPUT</button>
+                    <button id="tab-btn" class="btn btn-primary flex-fill">SAVE TAB</button>
+                    <button id="delete-btn" class="btn btn-outline-success flex-fill">DELETE ALL</button>
+                    <button id="export-btn" class="btn btn-secondary flex-fill">EXPORT CSV</button>
+                    <button id="import-btn" class="btn btn-secondary flex-fill">IMPORT CSV</button>
+                    <input type="file" id="import-file" accept=".csv" style="display:none">
+                </div>
+                <div id="import-feedback" class="invalid-feedback mb-2" style="display:none"></div>
+            </div>
+            <ul id="ul-el" class="list-group">
+            </ul>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
